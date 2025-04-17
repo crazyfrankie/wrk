@@ -38,21 +38,21 @@ The Output will like this:
 ```
 Running 10s test @ http://localhost:8082/hello
   2048 goroutines running concurrently
-428253 request in 42733.48199446375,44.52MB read
-Request/sec:            42733.48
-Transfer/sec:           4.44MB
-Overall Requests/sec:   37116.50
-Overall Transfer/sec:   3.86MB
-Fastest Request:        81µs
-Avg Req Time:           47.924ms
-Slowest Request:        520.127ms
+369784 request in 10.023184433s, 38.44MB read
+Request/sec:            36892.87
+Transfer/sec:           3.84MB
+Overall Requests/sec:   31587.22
+Overall Transfer/sec:   3.28MB
+Fastest Request:        90µs
+Avg Req Time:           55.511ms
+Slowest Request:        931.615ms
 Number of Errors:       0
-10%:                    129µs
-50%:                    169µs
-75%:                    188µs
-99%:                    203µs
-99.9%:                  204µs
-99.9999%:               204µs
-99.99999%:              204µs
-stddev:                 43.175ms
+10%:                    133µs
+50%:                    181µs
+75%:                    201µs
+99%:                    218µs
+99.9%:                  218µs
+99.9999%:               218µs
+99.99999%:              218µs
+stddev:                 52.955ms
 ```
