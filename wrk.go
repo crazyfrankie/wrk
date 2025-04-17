@@ -157,7 +157,7 @@ func main() {
 	overallReqRate := float64(stats.NumRequests) / duration.Seconds()
 	overallBytesRate := float64(stats.TotalRespSize) / duration.Seconds()
 
-	fmt.Printf("%v request in %v,%v read\n", stats.NumRequests, reqRate, Bytes{Size: float64(stats.TotalRespSize)})
+	fmt.Printf("%v request in %v, %v read\n", stats.NumRequests, avgGoroutineDur, Bytes{Size: float64(stats.TotalRespSize)})
 	fmt.Printf("Request/sec:\t\t%.2f\nTransfer/sec:\t\t%v\n", reqRate, Bytes{Size: bytesRate})
 	fmt.Printf("Overall Requests/sec:\t%.2f\nOverall Transfer/sec:\t%v\n", overallReqRate, Bytes{Size: overallBytesRate})
 	fmt.Printf("Fastest Request:\t%v\n", convertDuration(stats.Histogram.Min()))
