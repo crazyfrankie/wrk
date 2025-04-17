@@ -100,7 +100,7 @@ func (r *Request) Run() {
 	r.Stats <- res
 }
 
-// Do send a http request
+// Do send an http request
 func (r *Request) Do(client *http.Client) (int, time.Duration, error) {
 	var respSize int
 	var duration time.Duration

@@ -177,7 +177,7 @@ func main() {
 	fmt.Printf("stddev:\t\t\t%v\n", convertDuration(int64(stats.Histogram.StdDev())))
 }
 
-// printDefaults is used when users enter -help or do not enter the url correctly
+// printDefaults is used when users enter - help or do not enter the url correctly
 func printDefaults() {
 	fmt.Println("Usage: wrk-go <option> <url>")
 	fmt.Println("Options:")
